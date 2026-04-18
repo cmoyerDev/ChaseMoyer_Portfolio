@@ -5,34 +5,34 @@ html {
 }
 
 body {
-    background-color: darkblue;
+    background-color: ivory;
     text-align: center;
     font-family: sans-serif;
     margin: 0;
 }
-p, h2 {
-    color: white;
+h2 {
+    color: #050d1a;
 }
 
 h1 {
-    color: midnightblue;
+    color: ivory;
     text-align: left;
     margin: 0;
     flex: 1;
     padding-left: 16px;
+    font-size: 18px;
 }
 
 nav {
     display: flex;
     align-items: center;
-    position: fixed;
     top: 0;
     width: 100%;
     z-index: 100;
 }
 
 .nav-bar {
-    background-color: white;
+    background-color: #050d1a;
     margin: 0;
     padding: 0;
 }
@@ -40,7 +40,7 @@ nav {
 .nav-links {
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: 10px;
     display: flex;
     justify-content: center;
     flex: 1;
@@ -52,30 +52,37 @@ nav {
 
 .nav-links li a {
     display: block;
-    color: darkblue;
+    color: ivory;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     font-weight: bold;
+    font-size: 18px;
 }
 
 .nav-links li a:hover {
-    background-color: midnightblue;
-    color: white;
+    text-decoration: underline;
+    text-underline-offset: 6px;
 }
 
 .home-container {
-    background-image: url("assets/wallpaperflare.com_wallpaper.jpg");
+    /*background-image: url("assets/4142199-2610343539.jpg");*/
+    background: linear-gradient(135deg, #050d1a, #0d2b5e, #0a1628);
     text-align: center;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     position: relative;
-    color: white;
+    color: ivory;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     font-size: 26px;
+    text-shadow: -1px 0 black,
+                  1px 0 black,
+                 -1px 0 black,
+                  1px 0 black,
+                  2px 4px 12px rgba(0,0,0,0.6);
 }
 
 .home-container img {
@@ -83,4 +90,55 @@ nav {
     height: 100%;
     object-fit: cover;
     object-position: center;
+}
+
+.home-container h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: ivory;
+}
+
+.home-container p {
+    margin: 20px;
+    color: ivory;
+}
+
+.projects-button {
+    background-color: #4a9eff;
+    color: ivory;
+    border: none;
+    margin-top: 60px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    text-shadow: none;
+    font-weight: bold;
+}
+
+.project-container {
+    display: flex;
+
+}
+
+.project-1 {
+    flex: 1;
+}
+
+.project-2 {
+    flex: 1;
+}
+
+footer {
+    background-color: #050d1a;
+    color: ivory;
+    padding: 10px;
+    bottom: 0;
+    font-size: 14px;
+}
+
+footer a {
+    color: ivory;
 }
