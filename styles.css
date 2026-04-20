@@ -125,7 +125,12 @@ nav {
     text-align: left;
 }
 
-.projects-button {
+.connection-buttons {
+    display: flex;
+    flex-direction: row;
+}
+
+.projects-button, .connection-git {
     background-color: #4a9eff;
     color: ivory;
     border: none;
@@ -138,6 +143,13 @@ nav {
     text-decoration: none;
     text-shadow: none;
     font-weight: bold;
+}
+
+.connection-git {
+    width: 50px;
+    height: 50px;
+    margin-left: 30px;
+    margin-right: 30px;
 }
 
 .project-container {
